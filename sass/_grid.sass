@@ -6,20 +6,29 @@ body
     padding: 0
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
     font-size: 17px
+    background: #fff
     a 
        text-decoration: none
        color: $menu-color
-       font-weight: bold
     li
       list-style: none
+ul, li 
+      margin: 0
+      padding: 0
 
 .wrapper 
+   height: 2900px
    max-width: 1920px
+   min-width: 940px
    margin: 0 auto
    padding: 0
    box-shadow: 0 0 40px #ccc
    background-color: #fff
-   min-width: 940px
    position: relative
    &--fixed 
       max-width: 1600px
+
+.container-fluid 
+    margin: 0 30px
+    padding-right: 20px
+    padding-left: 20px

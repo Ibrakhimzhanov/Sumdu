@@ -1,15 +1,343 @@
 .header 
+    max-height: 80px
+    position: relative
     display: flex
+    align-items: center
     justify-content: space-between
-    &-menu
+    &-logo 
+        cursor: pointer
+    &__nav 
+        display: flex
+        align-items: center
+        justify-content: space-between
+        line-height: 80px
+        width: 100%
+    &-menu 
         display: flex
         justify-content: space-around
-        width: 100%
-        margin-left: 100px
-    &-lang 
-       .dropdown-menu
-           display: flex
-           justify-content: center
-           align-items: center
-           a
-                display: flex
+        flex-grow: 3
+        margin-left: 170px
+        margin-right: 5px
+        &__item
+            cursor: pointer
+            padding: 0 20px 0 20px
+            height: 80px
+            display: flex
+            align-items: center
+            &:hover 
+                background-color: #f1f1f1f1
+                .header-menu__link
+                    border-bottom: 2px solid #206fb4 
+        &__link
+            display: flex
+            transition: all .2s
+            border-bottom: 2px solid transparent 
+            line-height: 25px
+            font-weight: bold
+            &:last-child
+                margin-right: 0
+    &-lang
+        padding: 0 30px
+        border-left: 1px solid #e2e2e2e2
+        border-right: 1px solid #e2e2e2e2
+        height: 80px
+        display: flex
+        align-items: center
+        .lang
+            background: #f1f1f1f1
+            width: 80px
+            height: 40px
+            display: flex
+            align-items: center
+            padding: 10px
+            position: relative
+            .caret 
+                position: absolute
+                right: 6px
+                width: 0
+                height: 0
+                border-top: 4px solid #000
+                border-right: 4px solid transparent
+                border-left: 4px solid transparent
+            img 
+                margin-right: 5px
+    &-search 
+        height: 80px
+        display: flex
+        align-items: center
+        cursor: pointer
+        transition: all .2s
+        &:hover
+            background-color: #f1f1f1f1
+        &__img 
+            display: flex
+            align-items: center
+            padding: 0 25px
+            img
+                width: 25px     
+    &-work
+        &__img 
+            cursor: pointer
+            height: 80px
+            border-left: 1px solid #e2e2e2e2
+            border-right: 1px solid #e2e2e2e2
+            display: flex
+            align-items: center
+            padding: 0 25px
+            transition: all .2s
+            &:hover
+                background-color: #f1f1f1f1
+            img
+                width: 25px
+    &-link
+        &__text 
+            display: flex
+            padding: 0 30px
+            border-right: 1px solid #e2e2e2e2
+            border-bottom: 3px solid #206fb4
+            box-sizing: border-box
+            height: 79px
+            &:hover
+                background-color: #f1f1f1f1
+            img
+                width: 15px
+                margin-left: 10px
+
+// Main 
+
+.main 
+    background: url(/img/dedication.jpg) no-repeat center / cover
+    width: 100%
+    height: 600px
+    &-head 
+        background-color: rgba(14, 52, 92, 0.5)
+        position: absolute
+        right: 0
+        left: 0
+        margin: 0
+        padding: 25px 100px
+        &__list 
+            display: flex
+            align-items: center
+            justify-content: space-between
+            .list
+                &-item 
+                    margin-right: 30px
+                    &:first-child a
+                        position: relative
+                        &:after 
+                            content: ''
+                            position: absolute
+                            left: -35px
+                            top: -7px
+                            background:  url(/icons/info.png) no-repeat center
+                            display: block
+                            width: 30px
+                            height: 30px
+                &-link
+                    color: #fff 
+                    transition: all .2s
+                    &:hover
+                        text-decoration: underline
+
+//  Banners
+
+.section--banners
+    display: block
+    margin-top: 10px
+    .banners 
+        background: #f1f1f1f1
+        padding: 40px 30px 0 30px
+        &__list             
+            display: flex
+            width: 100%
+            justify-content: space-between
+        &__content 
+            display: inline-flex
+            position: relative
+            margin: 10px
+            transition: all .3s .1s
+            &:hover 
+                box-shadow: -8px 8px 0 0 rgba(0, 0, 0, 0.12)          
+        &__link
+            display: inline-block
+            color: #fff
+            position: relative
+            &:hover
+                text-decoration: none
+                img 
+                    opacity: .7
+        &__image 
+            background: #333
+            img 
+                width: 100%
+                opacity: 1
+                transition: all .3s .1s
+        &__title
+            position: absolute
+            left: 0
+            bottom: 0
+            right: 0
+            padding: 30px
+            font-size: 24px
+            padding-right: 115px
+            span 
+                border-bottom: 1px solid rgba(#fff, 0.6)
+                padding-bottom: 0
+        &__link:hover .banners__title span
+            border-bottom-color: rgba(255, 255, 255, 0)
+// news
+.news
+    padding: 35px 0
+    background: #f1f1f1
+    &-header
+        padding: 15px 0
+        font-size: 22px
+        border-bottom: 0
+    &-api 
+        margin: 0 -10px 
+        &__list 
+            height: 226px
+        &__item
+            display: inline-flex
+            justify-content: space-between
+            width: 284px
+            padding: 20px
+            font-size: 15px
+            transition: all .3s .1s
+            margin-right: 15px
+            &:hover
+                box-shadow: -8px 8px 0 0 rgba(0, 0, 0, 0.12)
+                a  span
+                   text-decoration: underline
+            &:first-child
+                background: #fff
+                border: 3px solid #4f94d7
+            &:nth-child(2)
+                border-top: 3px solid #ccc
+                background-color: #e6e6e6
+            &:nth-child(3)
+                border-top: 3px solid #ccc
+                background-color: #e6e6e6
+            &:nth-child(4)
+                border-top: 3px solid #22a005
+                background-color: #fff
+            &:nth-child(5)
+                border-top: 3px solid #22a005
+                background-color: #fff
+            .new 
+                &-status
+                    display: inline-block
+                    float: right
+                    border: 1px solid #22a055
+                    background: #22a055
+                    padding: 3px 10px
+                    border-radius: 50px
+                    color: #fff
+                    font-size: 11px
+            span
+                font-size: 15px
+                margin-top: 20px
+                font-weight: normal
+                display: block
+            &-new 
+                display: inline-block
+                float: right  
+        &__icon
+            display: flex
+            align-items: center
+            font-size: 14px
+            margin-top: 10px
+            img 
+                margin-right: 5px
+        &__more 
+            padding: 15px 10px
+            a
+                text-transform: uppercase
+                font-weight: normal
+                &:hover
+                    text-decoration: underline
+// info
+.info 
+    margin-top: 30px
+    &-api
+        margin-top: 20px
+        width: 730px
+        &__image
+            &-wrap
+                position: relative
+                background-color: #000
+            background: url(https://news.sumdu.edu.ua/images/news/IMG_3445.jpg) no-repeat  center / cover
+            height: 400px
+            &-gradient 
+                position: absolute
+                left: 0
+                top: 50%
+                right: 0
+                bottom: 0
+                background-image: linear-gradient(transparent, #000)
+        &__title
+            position: absolute
+            bottom: 0
+            left: 0
+            right: 0
+            font-size: 22px
+            color: #fff
+            padding: 20px 30px
+            transition: all .3s .1s
+            &:hover
+                text-decoration: underline
+        &__item 
+            position: relative
+            &-img
+                width: 731px
+        &__description
+            background: #f1f1f1f1
+            width: 731px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            flex-wrap: wrap
+        &__date 
+            padding: 20px 30px
+        &__hits
+            padding: 20px 30px
+        &__text 
+            padding: 30px
+            padding-top: 0
+            margin: 0px
+            font-size: 15px
+            line-height: 20px
+.span6 
+    display: inline-block
+    width: 48%
+.row-fluid
+    display: flex
+    justify-content: space-around
+.api
+    &-news
+        &__list
+            display: flex
+            width: 100%
+        &__box
+            display: inline-block
+            width: 100%
+            margin-left: -10px
+            &:last-child
+                margin-left: 10px
+        &__item
+            width: 100%
+            &-separator
+              border-top: 1px dashed #ccc 
+        &__content
+            margin: 10px
+            min-height: 90px
+        &__title
+            padding: 15px 0
+        &__date
+            padding: 10px 0
+            padding-top: 0
+        &__link
+            font-size: 15px
+            &:hover
+                text-decoration: underline
