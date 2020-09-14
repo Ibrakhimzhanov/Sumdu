@@ -169,6 +169,7 @@
                     opacity: .7
         &__image 
             background: #333
+            height: 138px
             img 
                 width: 100%
                 opacity: 1
@@ -311,9 +312,11 @@
 .span6 
     display: inline-block
     width: 48%
+.right 
+    margin-left: 50px
 .row-fluid
     display: flex
-    justify-content: space-around
+    margin-left: -10px
 .api
     &-news
         &__list
@@ -327,6 +330,7 @@
                 margin-left: 10px
         &__item
             width: 100%
+            height: 130px
             &-separator
               border-top: 1px dashed #ccc 
         &__content
@@ -334,10 +338,307 @@
             min-height: 90px
         &__title
             padding: 15px 0
+            padding-bottom: 5px
         &__date
-            padding: 10px 0
-            padding-top: 0
+            padding: 15px 0
         &__link
             font-size: 15px
             &:hover
                 text-decoration: underline
+        &__more
+            margin-left: -10px
+            font-size: 15px
+
+// access
+.access
+    background-color: #f1f1f1f1
+    background: url(/icons/bg-pattern.png)
+    padding:  20px 0
+    &-header
+        margin-left: 20px
+        padding-bottom: 10px
+    &-banners
+        background: none!important
+        margin-left: -10px
+        padding: 0 20px!important
+        .banners__image
+            height: 149px
+
+        img 
+            height: 150px
+        &__title
+            font-size: 20px!important
+            padding-right: 0px!important
+    &-list 
+        display: flex
+        margin-top: 20px
+        margin-left: 10px
+        flex-wrap: wrap
+    &__item
+        width: 25%
+        a[href^="#1"]
+            span::after 
+                content: ''
+                display: inline-block
+                background: url(/icons/icon-ref.png) no-repeat right bottom 
+                width: 16px
+                height: 16px
+    &-title
+        span
+            font-size: 20px
+            padding-bottom: 1px
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+        background: #fff
+        color: #333333
+        margin-right: 20px
+        margin-bottom: 30px
+        height: 110px
+        padding: 40px 20px
+        transition: all .3s .1s
+        &:hover
+            box-shadow: -8px 8px 0 0 rgba(0, 0, 0, 0.12)
+            span 
+                 border-bottom: 1px solid rgba(0, 0, 0, 0)
+// media 
+.media 
+    padding-top: 40px 
+    background-color: #fff
+    background: url(/icons/bg-circles.jpg) no-repeat
+    border-bottom: 1px dashed #ccc
+    &__list
+        display: flex
+        justify-content: space-between
+        margin: 0 10px
+        margin-bottom: 30px
+        margin-top: 10px
+    .news-api__more
+        margin-left: 10px!important
+        i 
+            font-size: 15px
+    &__item
+        width: 25%
+    &__content 
+        margin: 10px
+    &__wrapper
+        background: #f1f1f1f1
+        transition: all .3s .1s
+        margin-bottom: 1px
+        position: relative
+        &:hover
+            background: #ccc
+    &__link
+        display: block
+        color: #333
+    &__image
+        background-color: #ccc
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+        height: 170px
+        transition: all .3s .1s
+        transform: translate3d(0, 0, 0)
+        opacity: 0.9
+        &_underline
+            background-position: center 
+            padding-top: 12px
+            height: 12px
+            background-color: #ccc
+            background-size: cover
+            background-repeat: no-repeat
+            &--1
+                margin: 0 10px
+                opacity: 0.9
+            &--2
+                margin: 0 15px
+                opacity: 0.6
+            &--3 
+                margin: 0 20px
+                opacity: 0.3
+        &-wrapper 
+            background-color: #000
+    &__icon
+        position: absolute
+        top: 20%
+        left: 50%
+        margin-left: -55px
+        transition: all .2s
+        transform: scale(0.8)
+        text-align: center
+        i 
+            font-size: 55px
+            color: #fff
+        &-text
+            color: #fff
+            opacity: 0
+            transition: all .3s .1s
+    &__title
+        padding: 30px 20px
+        text-align: center
+        font-size: 20px
+        span 
+            padding-bottom: 1px
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+    &__link:hover 
+        .media__image
+            opacity: 0.6
+        .media__icon
+            transform: scale(1)
+            &-text
+                opacity: 1
+// centers
+.centers
+    background: #f1f1f1f1
+    padding: 30px 0 40px 0
+    border-bottom: 1px dashed #ccc
+    &__list
+        margin-top: 15px
+        display: flex
+        margin-left: 10px
+    &__item
+        margin: 0 20px 0 0
+    &__link 
+        position: relative
+        display: block
+    &__title 
+        opacity: 0
+        padding: 10px 15px
+        position: absolute
+        top: 0
+        left: 0
+        transition: all .3s .1s
+        font-size: 15px
+        color: #fff
+    &__link:hover .centers__title
+        opacity: 1
+        background: rgba(#000, 0.6)
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+// contact 
+.contact 
+    padding: 40px 0 30px 0
+    border-bottom: 1px dashed #ccc
+    &__list 
+        display: flex
+    &-text
+        width: 25%
+        margin-left: 50px
+        &:first-child
+            margin-left: 10px
+    &-header
+        font-size: 22px
+        margin: 20px 0 10px
+        padding-bottom: 2px
+    &-sub 
+        margin-bottom: 20px
+        line-height: 22px
+        font-size: 15px
+        a
+            color: #08c 
+    &-link
+        display: block
+        font-size: 15px
+        margin-bottom: 5px
+        color: #08c
+    &-icon
+        display: flex
+        justify-content: space-around
+        padding-right: 50px 
+        &__item
+            display: flex
+            align-items: center
+            justify-content: center
+            padding-left: 10px
+            margin: 5px 7px
+            text-align: center
+            width: 44px
+            height: 44px
+            border-radius: 50px
+            background: #d9d9d9
+            color: #333
+            font-size: 21px
+            transition: all .3s .1s
+        .facebook
+            &:hover 
+                background-color: #3b5998
+                color: #fff
+        .twitter
+            &:hover 
+                background-color: #2baae0
+                color: #fff
+        .youtube
+            &:hover 
+                background-color: #fe3432
+                color: #fff
+        .instagram
+            &:hover 
+                color: #fff
+                background-color: #bd2a9d
+                background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%)
+        .telegram
+            &:hover 
+                background-color: #76a0d3
+                color: #fff
+// footer
+.footer
+    padding: 40px 0 30px 0
+    border-bottom: 1px dashed #ccc
+    &__list
+        display: flex
+        align-items: start
+        margin-left: 10px
+    &-item
+        margin-left: 80px
+        &:first-child
+            margin-left: 0
+        a 
+            display: flex
+            align-items: center
+            justify-content: space-between
+            width: 100%
+    &-link
+        display: block
+        margin-bottom: 10px
+        font-size: 15px
+        &:hover
+            text-decoration: underline
+        &-custom
+            background: #4f94d7
+            display: flex
+            min-width: 250px
+            align-items: center
+            padding: 14px 20px
+            position: relative
+            color: #fff
+            transition: all .3s .1s
+            margin-top: 30px
+            text-decoration: none
+            img 
+                position: absolute
+                right: 10px
+            &:hover 
+                background: #36699c
+        &-light
+            margin-top: 0 
+            background: none
+            border: 2px solid #4f94d7
+            color: #08c
+            &:hover 
+                color: #fff
+                border: 2px solid transparent
+// copyright
+.copyright 
+    padding: 30px 0 20px 0
+    text-align: center
+    &-header
+        display: block
+        color: #08c
+        margin-bottom: 20px
+        font-size: 12px
+    &-desc  
+        font-size: 12px
+        line-height: 22px
+        a
+            color: #08c

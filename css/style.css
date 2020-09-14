@@ -24,8 +24,11 @@ ul, li {
   padding: 0;
 }
 
+i {
+  padding-right: 10px;
+}
+
 .wrapper {
-  height: 2900px;
   max-width: 1920px;
   min-width: 940px;
   margin: 0 auto;
@@ -285,6 +288,7 @@ ul, li {
 
 .section--banners .banners__image {
   background: #333;
+  height: 138px;
 }
 
 .section--banners .banners__image img {
@@ -502,9 +506,13 @@ ul, li {
   width: 48%;
 }
 
+.right {
+  margin-left: 50px;
+}
+
 .row-fluid {
   display: flex;
-  justify-content: space-around;
+  margin-left: -10px;
 }
 
 .api-news__list {
@@ -524,6 +532,7 @@ ul, li {
 
 .api-news__item {
   width: 100%;
+  height: 130px;
 }
 
 .api-news__item-separator {
@@ -537,11 +546,11 @@ ul, li {
 
 .api-news__title {
   padding: 15px 0;
+  padding-bottom: 5px;
 }
 
 .api-news__date {
-  padding: 10px 0;
-  padding-top: 0;
+  padding: 15px 0;
 }
 
 .api-news__link {
@@ -550,5 +559,435 @@ ul, li {
 
 .api-news__link:hover {
   text-decoration: underline;
+}
+
+.api-news__more {
+  margin-left: -10px;
+  font-size: 15px;
+}
+
+.access {
+  background-color: #f1f1f1f1;
+  background: url(/icons/bg-pattern.png);
+  padding: 20px 0;
+}
+
+.access-header {
+  margin-left: 20px;
+  padding-bottom: 10px;
+}
+
+.access-banners {
+  background: none !important;
+  margin-left: -10px;
+  padding: 0 20px !important;
+}
+
+.access-banners .banners__image {
+  height: 149px;
+}
+
+.access-banners img {
+  height: 150px;
+}
+
+.access-banners__title {
+  font-size: 20px !important;
+  padding-right: 0px !important;
+}
+
+.access-list {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 10px;
+  flex-wrap: wrap;
+}
+
+.access__item {
+  width: 25%;
+}
+
+.access__item a[href^="#1"] span::after {
+  content: '';
+  display: inline-block;
+  background: url(/icons/icon-ref.png) no-repeat right bottom;
+  width: 16px;
+  height: 16px;
+}
+
+.access-title {
+  background: #fff;
+  color: #333333;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  height: 110px;
+  padding: 40px 20px;
+  transition: all .3s .1s;
+}
+
+.access-title span {
+  font-size: 20px;
+  padding-bottom: 1px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.access-title:hover {
+  box-shadow: -8px 8px 0 0 rgba(0, 0, 0, 0.12);
+}
+
+.access-title:hover span {
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+.media {
+  padding-top: 40px;
+  background-color: #fff;
+  background: url(/icons/bg-circles.jpg) no-repeat;
+  border-bottom: 1px dashed #ccc;
+}
+
+.media__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.media .news-api__more {
+  margin-left: 10px !important;
+}
+
+.media .news-api__more i {
+  font-size: 15px;
+}
+
+.media__item {
+  width: 25%;
+}
+
+.media__content {
+  margin: 10px;
+}
+
+.media__wrapper {
+  background: #f1f1f1f1;
+  transition: all .3s .1s;
+  margin-bottom: 1px;
+  position: relative;
+}
+
+.media__wrapper:hover {
+  background: #ccc;
+}
+
+.media__link {
+  display: block;
+  color: #333;
+}
+
+.media__image {
+  background-color: #ccc;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 170px;
+  transition: all .3s .1s;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.9;
+}
+
+.media__image_underline {
+  background-position: center;
+  padding-top: 12px;
+  height: 12px;
+  background-color: #ccc;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.media__image_underline--1 {
+  margin: 0 10px;
+  opacity: 0.9;
+}
+
+.media__image_underline--2 {
+  margin: 0 15px;
+  opacity: 0.6;
+}
+
+.media__image_underline--3 {
+  margin: 0 20px;
+  opacity: 0.3;
+}
+
+.media__image-wrapper {
+  background-color: #000;
+}
+
+.media__icon {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  margin-left: -55px;
+  transition: all .2s;
+  transform: scale(0.8);
+  text-align: center;
+}
+
+.media__icon i {
+  font-size: 55px;
+  color: #fff;
+}
+
+.media__icon-text {
+  color: #fff;
+  opacity: 0;
+  transition: all .3s .1s;
+}
+
+.media__title {
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.media__title span {
+  padding-bottom: 1px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.media__link:hover .media__image {
+  opacity: 0.6;
+}
+
+.media__link:hover .media__icon {
+  transform: scale(1);
+}
+
+.media__link:hover .media__icon-text {
+  opacity: 1;
+}
+
+.centers {
+  background: #f1f1f1f1;
+  padding: 30px 0 40px 0;
+  border-bottom: 1px dashed #ccc;
+}
+
+.centers__list {
+  margin-top: 15px;
+  display: flex;
+  margin-left: 10px;
+}
+
+.centers__item {
+  margin: 0 20px 0 0;
+}
+
+.centers__link {
+  position: relative;
+  display: block;
+}
+
+.centers__title {
+  opacity: 0;
+  padding: 10px 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .3s .1s;
+  font-size: 15px;
+  color: #fff;
+}
+
+.centers__link:hover .centers__title {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.contact {
+  padding: 40px 0 30px 0;
+  border-bottom: 1px dashed #ccc;
+}
+
+.contact__list {
+  display: flex;
+}
+
+.contact-text {
+  width: 25%;
+  margin-left: 50px;
+}
+
+.contact-text:first-child {
+  margin-left: 10px;
+}
+
+.contact-header {
+  font-size: 22px;
+  margin: 20px 0 10px;
+  padding-bottom: 2px;
+}
+
+.contact-sub {
+  margin-bottom: 20px;
+  line-height: 22px;
+  font-size: 15px;
+}
+
+.contact-sub a {
+  color: #08c;
+}
+
+.contact-link {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: #08c;
+}
+
+.contact-icon {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 50px;
+}
+
+.contact-icon__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  margin: 5px 7px;
+  text-align: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  background: #d9d9d9;
+  color: #333;
+  font-size: 21px;
+  transition: all .3s .1s;
+}
+
+.contact-icon .facebook:hover {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.contact-icon .twitter:hover {
+  background-color: #2baae0;
+  color: #fff;
+}
+
+.contact-icon .youtube:hover {
+  background-color: #fe3432;
+  color: #fff;
+}
+
+.contact-icon .instagram:hover {
+  color: #fff;
+  background-color: #bd2a9d;
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}
+
+.contact-icon .telegram:hover {
+  background-color: #76a0d3;
+  color: #fff;
+}
+
+.footer {
+  padding: 40px 0 30px 0;
+  border-bottom: 1px dashed #ccc;
+}
+
+.footer__list {
+  display: flex;
+  align-items: start;
+  margin-left: 10px;
+}
+
+.footer-item {
+  margin-left: 80px;
+}
+
+.footer-item:first-child {
+  margin-left: 0;
+}
+
+.footer-item a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-link {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-link-custom {
+  background: #4f94d7;
+  display: flex;
+  min-width: 250px;
+  align-items: center;
+  padding: 14px 20px;
+  position: relative;
+  color: #fff;
+  transition: all .3s .1s;
+  margin-top: 30px;
+  text-decoration: none;
+}
+
+.footer-link-custom img {
+  position: absolute;
+  right: 10px;
+}
+
+.footer-link-custom:hover {
+  background: #36699c;
+}
+
+.footer-link-light {
+  margin-top: 0;
+  background: none;
+  border: 2px solid #4f94d7;
+  color: #08c;
+}
+
+.footer-link-light:hover {
+  color: #fff;
+  border: 2px solid transparent;
+}
+
+.copyright {
+  padding: 30px 0 20px 0;
+  text-align: center;
+}
+
+.copyright-header {
+  display: block;
+  color: #08c;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.copyright-desc {
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.copyright-desc a {
+  color: #08c;
 }
 /*# sourceMappingURL=style.css.map */
