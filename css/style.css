@@ -197,7 +197,7 @@ i {
 }
 
 .main {
-  background: url(/img/dedication.jpg) no-repeat center/cover;
+  background: url(../img/dedication.jpg) no-repeat center/cover;
   width: 100%;
   height: 600px;
 }
@@ -230,7 +230,7 @@ i {
   position: absolute;
   left: -35px;
   top: -7px;
-  background: url(/icons/info.png) no-repeat center;
+  background: url(../icons/info.png) no-repeat center;
   display: block;
   width: 30px;
   height: 30px;
@@ -317,7 +317,7 @@ i {
 }
 
 .news {
-  padding: 35px 0;
+  padding: 30px 0 30px 0;
   background: #f1f1f1;
 }
 
@@ -426,6 +426,7 @@ i {
 }
 
 .info {
+  padding: 40px 0 30px 0;
   margin-top: 30px;
 }
 
@@ -568,7 +569,7 @@ i {
 
 .access {
   background-color: #f1f1f1f1;
-  background: url(/icons/bg-pattern.png);
+  background: url(../icons/bg-pattern.png);
   padding: 20px 0;
 }
 
@@ -610,7 +611,7 @@ i {
 .access__item a[href^="#1"] span::after {
   content: '';
   display: inline-block;
-  background: url(/icons/icon-ref.png) no-repeat right bottom;
+  background: url(../icons/icon-ref.png) no-repeat right bottom;
   width: 16px;
   height: 16px;
 }
@@ -640,9 +641,9 @@ i {
 }
 
 .media {
-  padding-top: 40px;
+  padding: 40px 0px 30px 0;
   background-color: #fff;
-  background: url(/icons/bg-circles.jpg) no-repeat;
+  background: url(../icons/bg-circles.jpg) no-repeat;
   border-bottom: 1px dashed #ccc;
 }
 
@@ -796,6 +797,7 @@ i {
   position: absolute;
   top: 0;
   left: 0;
+  height: 97%;
   transition: all .3s .1s;
   font-size: 15px;
   color: #fff;
@@ -845,11 +847,19 @@ i {
   color: #08c;
 }
 
+.contact-sub a:hover {
+  text-decoration: underline;
+}
+
 .contact-link {
   display: block;
   font-size: 15px;
   margin-bottom: 5px;
   color: #08c;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
 }
 
 .contact-icon {
@@ -956,6 +966,7 @@ i {
 
 .footer-link-custom:hover {
   background: #36699c;
+  text-decoration: none;
 }
 
 .footer-link-light {
@@ -982,6 +993,10 @@ i {
   font-size: 12px;
 }
 
+.copyright-header:hover {
+  text-decoration: underline;
+}
+
 .copyright-desc {
   font-size: 12px;
   line-height: 22px;
@@ -989,5 +1004,9 @@ i {
 
 .copyright-desc a {
   color: #08c;
+}
+
+.copyright-desc a:hover {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */
